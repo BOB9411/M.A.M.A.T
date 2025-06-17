@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Maison du Chapeau</title>
+  <style>
+    body { font-family: 'Georgia', serif; margin: 0; background-color: #f9f9f9; color: #333; }
+    nav { background: white; padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+    nav a { margin-left: 1rem; text-decoration: none; color: #444; }
+    nav a:hover { text-decoration: underline; }
+    header, main, section, footer { padding: 2rem; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
+    .card { background: white; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); overflow: hidden; }
+    .card img { width: 100%; display: block; }
+    .card-content { padding: 1rem; }
+    .card h3 { margin: 0.5rem 0; }
+    .card p { margin: 0.5rem 0; color: #666; }
+    .price { font-weight: bold; color: #111; }
+    .button { display: inline-block; padding: 0.75rem 1.5rem; background: black; color: white; text-align: center; border-radius: 8px; text-decoration: none; }
+    .form input, .form textarea { width: 100%; padding: 0.75rem; margin-bottom: 1rem; border: 1px solid #ccc; border-radius: 6px; }
+  </style>
+</head>
+<body>
+  <nav>
+    <div><strong>Maison du Chapeau</strong></div>
+    <div>
+      <a href="#accueil">Accueil</a>
+      <a href="#collection">Collection</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <header id="accueil">
+    <h1>Bienvenue à la Maison du Chapeau</h1>
+    <p>Découvrez l'élégance intemporelle et le savoir-faire artisanal à travers notre collection de chapeaux de luxe. Chaque pièce est une œuvre d'art conçue pour sublimer votre allure.</p>
+  </header>
+
+  <main id="collection">
+    <h2>Notre Collection</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="https://source.unsplash.com/300x300/?luxury,hat,black" alt="Élégance Noire" />
+        <div class="card-content">
+          <h3>Élégance Noire</h3>
+          <p>Chapeau feutre noir avec ruban de soie. Fabriqué à la main en Italie.</p>
+          <p class="price">450€</p>
+          <a href="#" class="button">Commander</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://source.unsplash.com/300x300/?luxury,hat,summer" alt="Perle d'Été" />
+        <div class="card-content">
+          <h3>Perle d'Été</h3>
+          <p>Panama raffiné en paille tressée avec finitions dorées.</p>
+          <p class="price">390€</p>
+          <a href="#" class="button">Commander</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://source.unsplash.com/300x300/?luxury,hat,feather" alt="Royale Opaline" />
+        <div class="card-content">
+          <h3>Royale Opaline</h3>
+          <p>Chapeau de cérémonie orné de plumes d’autruche et dentelle.</p>
+          <p class="price">720€</p>
+          <a href="#" class="button">Commander</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <section id="contact">
+    <h2>Contactez-nous</h2>
+    <p>Pour toute demande personnalisée ou prise de rendez-vous, écrivez-nous :</p>
+    <form class="form">
+      <input type="text" placeholder="Votre nom" required />
+      <input type="email" placeholder="Votre email" required />
+      <textarea rows="4" placeholder="Votre message" required></textarea>
+      <button type="submit" class="button">Envoyer</button>
+    </form>
+  </section>
+</body>
+</html>
